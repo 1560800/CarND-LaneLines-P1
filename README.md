@@ -86,11 +86,19 @@ Refer Chapter 2 for details on combining slopes and intercept groups to create a
 ## 2. Especially examined points  
 
 ### 2.1 Length weight addition  
-
+The method of averaging only slope and intercept of the extracted edge has a large error.  
+The influence of lope and intercept is equal for long lines and short lines,  
+but long lines have small errors and short lines have large errors.  
+Apply weighting to each slope and intercept in proportion to the total length of edge,  
+and improve them by combining them.
 ![png](examples/21.png)
 
 ### 2.2 Set slope criteria  
-
+We need to remove edges other than lanes, such as building shadows.  
+As one of the judgment criteria, the slope close to the horizon has a high possibility of a dummy other than the lane,  
+so we set criteria of the slope.
+As for the criteria of inclination, it was judged as NG if the angle is shallower  
+than the line connecting the lower corner of the screen from the vanishing point.  
 ![png](examples/23.png)
 
 ## 3. Conclusion
@@ -99,28 +107,3 @@ This project was successful because the video images clearly show the lane lines
 This straight line detection feature is very effective on long straight roads. However, under practical circumstances, limitations may be necessary due to the possibility of false detection of weather (any tire marks on snow road) , long shadows of buildings projected diagonally or road cracks etc.
 
 In addition, since the position of the vanishing point greatly moves in the frame in the case of a steep curve or a steep up-down road such as a mountain road, another algorithm must be used in line detection.
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
-
-### 2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
