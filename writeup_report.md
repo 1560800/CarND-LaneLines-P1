@@ -5,16 +5,17 @@
 ---
 
 1. Flow of processing  
-  1.1 Color selection  
-  1.2 Gray scalling  
-  1.3 Gaussian smoothing  
-  1.4 Canny edge detection  
-  1.5 Masked by region  
-  1.6 Hough transform line detection  
-  1.7 Draw pipe lines  
+  1.1 Load original images  
+  1.2 Color selection  
+  1.3 Gray scalling  
+  1.4 Gaussian smoothing  
+  1.5 Canny edge detection  
+  1.6 Masked by region  
+  1.7 Hough transform line detection  
+  1.8 Draw pipe lines  
 
 2. Especially examined points  
-  2.1 Length weight addition
+  2.1 Length weight addition  
   2.2 Set slope criteria
 
 3. Conclusion
@@ -28,38 +29,48 @@
 
 ## 1. Flow of processing
 
-### 1.1 Color selection  
 
-Load and examine the following image 
+### 1.1 Original images  
 
-[//]: # (Image References)
+Load and examine the following image
 
-[image1]: ./examples/0.png "Original image"
+![png](examples/0.png)
 
-### 1.2 Gray scalling  
+### 1.2 Color selection  
 
-[//]: # (Image References)
+![png](examples/1.png)
 
-[image1]: ./examples/1.png "Gray scale image"
+### 1.3 Gray scalling  
 
-### 1.3 Gaussian smoothing  
+![png](examples/2.png)
 
-[//]: # (Image References)
+### 1.4 Gaussian smoothing  
 
-[image1]: ./examples/1.png "Gray scale image"
+![png](examples/3.png)
 
-### 1.4 Canny edge detection  
-[image1]: ./examples/1.png "Gray scale image"
+### 1.5 Canny edge detection  
 
-### 1.5 Masked by region  
-[image1]: ./examples/1.png "Gray scale image"
+![png](examples/4.png)
 
-### 1.6 Hough transform line detection  
-[image1]: ./examples/1.png "Gray scale image"
+### 1.6 Masked by region  
 
-### 1.7 Draw pipe lines  
-[image1]: ./examples/1.png "Gray scale image"
+![png](examples/5.png)
 
+### 1.7 Hough transform line detection  
+
+![png](examples/6.png)
+
+### 1.8 Draw pipe lines 
+
+![png](examples/7.png)
+
+---
+
+## 2. Especially examined points  
+
+### 2.1 Length weight addition
+
+### 2.2 Set slope criteria
 
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
