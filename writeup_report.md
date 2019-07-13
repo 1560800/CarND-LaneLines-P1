@@ -2,13 +2,22 @@
 
 ## Table of contents
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
-1 Function used
-2 Flow of processing
-3 Especially examined points
-4 Conclusion
+
+1. Flow of processing  
+  1.1 Color selection  
+  1.2 Gray scalling  
+  1.3 Gaussian smoothing  
+  1.4 Canny edge detection  
+  1.5 Masked by region  
+  1.6 Hough transform line detection  
+  1.7 Draw pipe lines  
+
+2. Especially examined points  
+  2.1 Length weight addition
+  2.2 Set slope criteria
+
+3. Conclusion
 
 
 [//]: # (Image References)
@@ -17,7 +26,41 @@
 
 ---
 
-### Reflection
+## 1. Flow of processing
+
+### 1.1 Color selection  
+
+Load and examine the following image 
+
+[//]: # (Image References)
+
+[image1]: ./examples/0.png "Original image"
+
+### 1.2 Gray scalling  
+
+[//]: # (Image References)
+
+[image1]: ./examples/1.png "Gray scale image"
+
+### 1.3 Gaussian smoothing  
+
+[//]: # (Image References)
+
+[image1]: ./examples/1.png "Gray scale image"
+
+### 1.4 Canny edge detection  
+[image1]: ./examples/1.png "Gray scale image"
+
+### 1.5 Masked by region  
+[image1]: ./examples/1.png "Gray scale image"
+
+### 1.6 Hough transform line detection  
+[image1]: ./examples/1.png "Gray scale image"
+
+### 1.7 Draw pipe lines  
+[image1]: ./examples/1.png "Gray scale image"
+
+
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
